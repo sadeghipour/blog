@@ -1,0 +1,575 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- For third-generation iPad with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/favicons/apple-touch-icon-144x144-precomposed.png">
+    <!-- For iPhone with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/favicons/apple-touch-icon-114x114-precomposed.png">
+    <!-- For first- and second-generation iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/favicons/apple-touch-icon-72x72-precomposed.png">
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="/images/favicons/apple-touch-icon-precomposed.png">
+    <link rel="icon" href="/images/favicons/favicon.ico" type="image/x-icon" />
+
+    <title>BritaNEWS | Responsive lightweight news theme</title>
+    <meta name="description" content="some description" />
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript" />
+    <meta name="author" content="{your name}" />
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <link rel="stylesheet" href="/css/font-awesome.min.css"/>
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="/css/font-awesome-ie7.min.css">
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Oswald:400,700,300' rel='stylesheet' type='text/css'>
+</head>
+<body data-ng-controller="CategoryLayoutController">
+<!-- ooooooooooooooooooooooooooooooooooooooooooooo
+IKLAN
+oooooooooooooooooooooooooooooooooooooooooooooooo-->
+<!--<div class="iklon">
+    <div class="container_12">
+        <div class="grid_12 text-center">
+            <a href="#">
+                <img src="/images/assets/m_main_ribbon.jpg" alt="image" />
+            </a>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="howow">
+        <div class="wow">
+            <div class="wow_inner">
+                <a href="#" class="closeit"><i class="icon-remove icon-2x"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>-->
+<div class="clearfix"></div>
+<div class="parentcontainer">
+    <div id="mobile-header">
+        <div id="container_12">
+            <div class="grid_4">
+                <a id="simple-menu" href="#sidr" class="sidrmenu"><i class="icon-list-ul"></i></a>
+            </div>
+            <div class="grid_4 text-center">
+                <p>Britanews</p>
+            </div>
+            <div class="grid_4 text-right">
+                <a id="righttrigger" href="#rightmenu" class="sidrmenu"><i class="icon-search"></i></a>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div id="sidr">
+        <h2>Pages</h2>
+        <ul>
+            <li><a href="#">Home</a>
+                <ul>
+                    <li><a href="home1.html">Homepage 1</a></li>
+                    <li><a href="home2.html">Homepage 2</a></li>
+                    <li><a href="home3.html">Homepage 3</a></li>
+                    <li><a href="home4.html">Homepage 4</a></li>
+                    <li><a href="home5.html">Homepage 5</a></li>
+                    <li><a href="home6.html">Homepage 6</a></li>
+                    <li><a href="home7.html">Homepage 7</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Single</a>
+                <ul>
+                    <li><a href="#">2 Columns Sidebar</a>
+                        <ul>
+                            <li><a href="single.html">Right Sidebar</a></li>
+                            <li><a href="single-left-sidebar.html">Left Sidebar</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="page.html">3 Columns</a>
+                        <ul>
+                            <li><a href="single-threecol.html">3 Columns right Sidebar</a></li>
+                            <li><a href="single-threecol-left.html">3 Columns left Sidebar</a></li>
+                            <li><a href="single-threecol-center.html">3 Columns Center Content</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="single-full.html">Full Width</a></li>
+                </ul>
+            </li>
+            <li><a href="page.html">Page</a>
+                <ul>
+                    <li><a href="page.html">2 Columns Sidebar</a>
+                        <ul>
+                            <li><a href="page.html">Right Sidebar</a></li>
+                            <li><a href="page-left-sidebar.html">Left Sidebar</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="page-fullwidth.html">Full Width</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Blog</a>
+                <ul>
+                    <li><a href="blog.html">Classic</a></li>
+                    <li><a href="blog-masonry.html">Masonry</a></li>
+                    <li><a href="blog-grid.html">Grid</a></li>
+                </ul>
+            </li>
+            <li><a href="elements.html">Elements</a></li>
+        </ul>
+
+        <h2>Categories</h2>
+        <ul>
+            <li><a href="archives-loop.html">Design</a></li>
+            <li><a href="archives-loop.html">Sport</a></li>
+            <li><a href="archives-loop.html">Politics</a></li>
+            <li><a href="archives-loop.html">Economy</a></li>
+            <li><a href="archives-loop.html">Technology</a></li>
+            <li><a href="archives-loop.html">Automotive</a></li>
+        </ul>
+    </div>
+
+    <div id="rightmenu">
+        <h1>Search</h1>
+        <form>
+            <input type="text" placeholder="Search...">
+        </form>
+    </div>
+
+    <!-- oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+        HEADER
+    oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo -->
+    <header id="mainheader" class="mobile-hide">
+        <div class="container container_12">
+            <!-- Logo -->
+            <div class="grid_3 logo">
+                <a href="#"><img src="images/logo.png" class="mobile-hide" alt="britanews"/></a>
+            </div>
+            <div class="grid_9 text-right">
+                <form class="headersearch" name="some_name" action="{form action link}" method="post">
+                    <input type="text" name="search" class="srcfield" onfocus="if(this.value=='Search'){this.value=''};" onblur="if(this.value==''){this.value='Search'};" value="Search"/>
+                    <div class="hdrbtn scnclr" id="search"><i class="icon-search"></i></div>
+                    <div class="clearfix"></div>
+                </form>
+                <div class="topmenu">
+                    <div class="hdrbtn scnclr"><i class="icon-globe"></i>
+                        <ul class="fadeout">
+                            <li><a href="#"><i class="icon-facebook"></i> Facebook</a></li>
+                            <li><a href="#"><i class="icon-linkedin"></i> Twitter</a></li>
+                            <li><a href="#"><i class="icon-instagram"></i> Instagram</a></li>
+                            <li><a href="#"><i class="icon-google-plus"></i> Google+</a></li>
+                            <li><a href="#"><i class="icon-youtube"></i> Youtube</a></li>
+                            <li><a href="#"><i class="icon-pinterest"></i> Pinterest</a></li>
+                        </ul>
+                    </div>
+                    <div class="hdrbtn scnclr"><i class="icon-th-list"></i>
+                        <ul class="fadeout">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Pages</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Post</a></li>
+                            <li><a href="#">Shortcodes</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+
+        <!-- Menu -->
+        <div class="container container_12">
+            <div class="grid_12">
+                <nav>
+                    <div>
+                        <ul class="mainmenu">
+                            <li><a href="#" class="icon-home active"></a>
+                                <ul>
+                                    <li><a href="home1.html">Homepage 1</a></li>
+                                    <li><a href="home2.html">Homepage 2</a></li>
+                                    <li><a href="home3.html">Homepage 3</a></li>
+                                    <li><a href="home4.html">Homepage 4</a></li>
+                                    <li><a href="home5.html">Homepage 5</a></li>
+                                    <li><a href="home6.html">Homepage 6</a></li>
+                                    <li><a href="home7.html">Homepage 7</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class=""><i class="icon-list-ul"></i></a>
+                                <ul>
+                                    <li><a href="archives-loop.html">Design</a></li>
+                                    <li><a href="archives-loop.html">Sport</a></li>
+                                    <li><a href="archives-loop.html">Politics</a></li>
+                                    <li><a href="archives-loop.html">Economy</a></li>
+                                    <li><a href="archives-loop.html">Technology</a></li>
+                                    <li><a href="archives-loop.html">Automotive</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Single</a>
+                                <ul>
+                                    <li><a href="#">2 Columns Sidebar</a>
+                                        <ul>
+                                            <li><a href="single.html">Right Sidebar</a></li>
+                                            <li><a href="single-left-sidebar.html">Left Sidebar</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="page.html">3 Columns</a>
+                                        <ul>
+                                            <li><a href="single-threecol.html">3 Columns right Sidebar</a></li>
+                                            <li><a href="single-threecol-left.html">3 Columns left Sidebar</a></li>
+                                            <li><a href="single-threecol-center.html">3 Columns Center Content</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="single-full.html">Full Width</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="page.html">Page</a>
+                                <ul>
+                                    <li><a href="page.html">2 Columns Sidebar</a>
+                                        <ul>
+                                            <li><a href="page.html">Right Sidebar</a></li>
+                                            <li><a href="page-left-sidebar.html">Left Sidebar</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="page-fullwidth.html">Full Width</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Blog</a>
+                                <ul>
+                                    <li><a href="blog.html">Classic</a></li>
+                                    <li><a href="blog-masonry.html">Masonry</a></li>
+                                    <li><a href="blog-grid.html">Grid</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="elements.html">Elements</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
+    <div class="clearfix"></div>
+
+    <!-- oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+        Breadcrumbs
+    oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo -->
+    <div class="container_12">
+        <div class="grid_6">
+            <ul class="breadcrumbs inline-list">
+                <li><a href="#">Home</a></li>
+                <li>Classic Blog Layout</li>
+            </ul>
+        </div>
+        <div class="grid_6 text-right">
+            <div id="Date" class="mobile-hide"></div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="clearfix"></div>
+
+    <!-- oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+        Content/Teaser
+    oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo -->
+    <section id="maincontent">
+        <!-- Morevideos -->
+
+        <div class="container container_12">
+            <div class="grid_12"><div class="textdev"><h1 class="fword">CLASSIC BLOG LAYOUT</h1><div></div></div></div>
+            <div class="clearfix"></div>
+            <!-- LEFT -->
+            <?php
+            echo $this->getContent();
+            ?>
+
+            <div class="grid_4">
+                <div class="sidebar">
+
+                    <div class="widgetbox orange">
+                        <h4><i class="icon-fire"></i> What's Hot</h4>
+                        <ul>
+                            <li>@someuser Haha, do you like it Bro?</li>
+                            <li>Hi, Brito magazine news is out now in envalabs</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>No, I don’t RT @emma Do you want to hang out with my friends?</li>
+                        </ul>
+                    </div>
+                    <div class="widgetbox red">
+                        <h4><i class="icon-play-circle"></i> Video Collections</h4>
+                        <article class="comitem">
+                            <div class="grid_5">
+                                <img src="images/assets/vids.jpg" alt="image"/>
+                            </div>
+                            <div class="grid_7">
+                                <h3>Video Title Here Lorem</h3>
+                                <em>November 20, 2013</em>
+                            </div>
+                        </article>
+                        <article class="comitem">
+                            <div class="grid_5">
+                                <img src="images/assets/vids.jpg" alt="image"/>
+                            </div>
+                            <div class="grid_7">
+                                <h3>Video Title Here Lorem</h3>
+                                <em>November 20, 2013</em>
+                            </div>
+                        </article>
+                        <article class="comitem">
+                            <div class="grid_5">
+                                <img src="images/assets/vids.jpg" alt="image"/>
+                            </div>
+                            <div class="grid_7">
+                                <h3>Video Title Here Lorem</h3>
+                                <em>November 20, 2013</em>
+                            </div>
+                        </article>
+                        <article class="comitem">
+                            <div class="grid_5">
+                                <img src="images/assets/vids.jpg" alt="image"/>
+                            </div>
+                            <div class="grid_7">
+                                <h3>Video Title Here Lorem</h3>
+                                <em>November 20, 2013</em>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="widgetbox green">
+                        <h4><i class="icon-tag"></i> Tags</h4>
+                        <div class="tags">
+                            <a href="#">Tag Link</a> <a href="#">Tag</a> <a href="#">Tag Link</a> <a href="#">Tag Link</a> <a href="#">Tag Link</a> <a href="#">Tag Link</a> <a href="#">Tag Link</a>
+                            <a href="#">Tag Link</a> <a href="#">Tag</a> <a href="#">Tag Link</a> <a href="#">Tag Link</a> <a href="#">Tag Link</a> <a href="#">Tag Link</a> <a href="#">Tag Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+    <div class="clearfix"></div>
+    <!-- oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+        Footer
+    oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo -->
+    <footer id="mainfooter">
+        <div class="container footer container_12 threecolumns">
+            <div class="fooline"></div> <!-- Extra line for footer -->
+            <div class="grid_4">
+                <div class="foowid">
+                    <h3 class="fword fwidtit">FEATURED POSTS</h3>
+                    <div class="featuredslides">
+                        <ul class="slides">
+                            <li>
+                                <img src="http://placehold.it/364x244" alt="image"/>
+                                <div class="capcontain">
+                                    <div class="slidetitle">
+                                        <div class="slidedate">October 29, 2013</div>
+                                        <div class="clear"></div>
+                                        <h2>How Instructural</h2>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="http://placehold.it/364x244" alt="image"/>
+                                <div class="capcontain">
+                                    <div class="slidetitle">
+                                        <div class="slidedate">October 29, 2013</div>
+                                        <div class="clear"></div>
+                                        <h2>THIS WEEK MOVIE REVIEW</h2>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="foowid">
+                    <h3 class="fword fwidtit">ABOUT BRITANEWS</h3>
+                    <img src="images/assets/iconlogo.jpg" alt="image" class="pushright"/>
+                    <p>BRITANEWS is Magazine website that brings you fresh news everyday. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus</p>
+                    <ul class="contact-list">
+                        <li><i class="icon-envelope"></i> email@britanews.com</li>
+                        <li><i class="icon-phone"></i> 09845746856</li>
+                        <li><i class="icon-map-marker"></i> 1400 Pentagon Pedestrian Tunnel, Washington, DC</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid_4">
+                <div class="foowid">
+                    <h3 class="fword fwidtit">RECENT POSTS</h3>
+                    <article class="recposts">
+                        <div class="grid_6 text-right">
+                            <div class="posthumb">
+                                <a href="#"><img src="http://placehold.it/164x101" alt="image"/></a>
+                            </div>
+                        </div>
+                        <div class="grid_6">
+                            <small>November 16, 2013</small>
+                            <h2><a href="#">What if your children want to buy expensive toys</a></h2>
+                        </div>
+                    </article>
+                    <article class="recposts">
+                        <div class="grid_6 text-right">
+                            <div class="posthumb">
+                                <a href="#"><img src="http://placehold.it/164x101" alt="image"/></a>
+                            </div>
+                        </div>
+                        <div class="grid_6">
+                            <small>November 16, 2013</small>
+                            <h2><a href="#">How to take care your pregnant wife</a></h2>
+                        </div>
+                    </article>
+                    <article class="recposts">
+                        <div class="grid_6 text-right">
+                            <div class="posthumb">
+                                <a href="#"><img src="http://placehold.it/164x101" alt="image"/></a>
+                            </div>
+                        </div>
+                        <div class="grid_6">
+                            <small>November 16, 2013</small>
+                            <h2><a href="#">Today is Father’s day, what do you expect from your family?</a></h2>
+                        </div>
+                    </article>
+
+
+                    <div class="clearfix"></div>
+                </div>
+
+                <!-- Video Of The Week -->
+                <div class="foowid">
+                    <h3 class="fword fwidtit">VIDEO OF THE WEEK</h3>
+                    <div class="videothumb posthumb">
+                        <img src="http://placehold.it/400x267" alt="ERW - Airless Bicycle Tires"/>
+                        <a href="http://www.youtube.com/watch?v=v9SWIsY8rzQ" class="vidplay" title="ERW - Airless Bicycle Tires" rel="prettyPhoto">
+                            <i class="icon-play-circle icon-3x"></i>
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+
+            </div>
+            <div class="grid_4 omega">
+                <!-- FLICKR -->
+                <div class="foowid">
+                    <h3 class="fword fwidtit">FLICKR FEEDS</h3>
+                    <ul>
+                        <div id="flickr" class="flickr"></div>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+
+                <!-- Review -->
+                <div class="foowid">
+                    <h3 class="fword fwidtit">LATEST REVIEW</h3>
+                    <article class="recposts">
+                        <div class="grid_3">
+                            <div class="posthumb">
+                                <img src="http://placehold.it/67x67" alt="image"/>
+                            </div>
+                        </div>
+                        <div class="grid_9">
+                            <h2><a href="#">New Macbook Pro Review Lorem Ipsu.</a></h2>
+                            <small>November 16, 2013</small>
+                            <div class="clearfix"></div>
+                            <div class="rating">
+                                <i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i>
+                            </div>
+
+                        </div>
+                    </article>
+                    <article class="recposts">
+                        <div class="grid_3">
+                            <div class="posthumb">
+                                <img src="http://placehold.it/67x67" alt="image"/>
+                            </div>
+                        </div>
+                        <div class="grid_9">
+                            <h2><a href="#">The One2Touch Softpad S1 NFC keyboard review</a></h2>
+                            <small>November 16, 2013</small>
+                            <div class="clearfix"></div>
+                            <div class="rating">
+                                <i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i>
+                            </div>
+
+                        </div>
+                    </article>
+                    <article class="recposts">
+                        <div class="grid_3">
+                            <div class="posthumb">
+                                <img src="http://placehold.it/67x67" alt="image"/>
+                            </div>
+                        </div>
+                        <div class="grid_9">
+                            <h2><a href="#">HTC One Max review</a></h2>
+                            <small>November 16, 2013</small>
+                            <div class="clearfix"></div>
+                            <div class="rating">
+                                <i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class=" icon-star-empty"></i>
+                            </div>
+
+                        </div>
+                    </article>
+                    <article class="recposts">
+                        <div class="grid_3">
+                            <div class="posthumb">
+                                <img src="http://placehold.it/67x67" alt="image"/>
+                            </div>
+                        </div>
+                        <div class="grid_9">
+                            <h2><a href="#">The MiniSuit Keyboard stand case for Nexus 7 (2013)</a></h2>
+                            <small>November 16, 2013</small>
+                            <div class="clearfix"></div>
+                            <div class="rating">
+                                <i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-half-empty"></i><i class="icon-star-empty"></i>
+                            </div>
+
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+
+        <!-- ooooooooooooooo
+        COPYRIGHT
+        ooooooooooooooooooo-->
+        <div class="copyright container container_12">
+            <div class="grid_6">
+                Copyright &copy; 2013 Britanews.lol. All rights reserved
+            </div>
+            <div class="grid_6">
+                <ul class="text-right inline-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">F.A.Q</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Advertise</a></li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+
+        <div class="clearfix"></div>
+    </footer>
+    <!-- END #mainfooter FOOTER -->
+    <div class="clearfix"></div>
+</div> <!-- end .parentcontainer -->
+<a href="#" class="scrollup"><i class="icon-chevron-up"></i></a>
+
+
+<script type="text/javascript" src="/js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="/js/plugin.js"></script>
+<script type="text/javascript" src="/js/custom.js"></script>
+
+<script src="/js/vendor/angular.min.js"></script>
+<script src="/js/vendor/angular-resource.min.js"></script>
+<script src="/js/vendor/angular-sanitize.min.js"></script>
+<script src="/js/vendor/angular-route.min.js"></script>
+<script src="/js/vendor/angular-animate.min.js"></script>
+<script data-main="/js/gaboot" src="/src/require.js"></script>
+</body>
+</html>
