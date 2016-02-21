@@ -14,7 +14,7 @@ class ApiController extends ControllerBase{
     function getIndexAction(){
         $res = new Response();
         $vo = new ReturnVO();
-        $post = Posts::find()->getLast();
+        $post = Posts::find(array("is_active=1"))->getLast();
         if($post){
             $vo->success["title"] = str_replace("#"," ",$post->title);
             $vo->success["body"] = $post->body;
@@ -113,7 +113,7 @@ class ApiController extends ControllerBase{
         $vo = new ReturnVO();
         if($req->isPost()){
             $menu = $req->getPost("menu");
-            $post = Posts::findFirst(array("title=?0","bind"=>array($menu)));
+            $post = Posts::findFirst(array("title=?0 AND description=?1 AND is_active=0","bind"=>array($menu,'menu')));
             if($post){
                 $vo->success = $post;
             }

@@ -35,91 +35,29 @@
 <div id="status">
 </div>
 
-
 <div data-ng-controller="LayoutController" ng-cloak>
 <!-- ooooooooooooooooooooooooooooooooooooooooooooo
 IKLAN
 oooooooooooooooooooooooooooooooooooooooooooooooo-->
 <div class="iklon">
-<!--    <div class="container_12">-->
-<!--        <div class="grid_12 text-center">-->
-<!--            <a href="#">-->
-<!--                <img src="images/assets/m_main_ribbon.jpg" alt="image" />-->
-<!--            </a>-->
-<!--        </div>-->
-<!--        <div class="clearfix"></div>-->
-<!--    </div>-->
-    <!--<div class="howow">
-        <div class="wow">
-            <div class="wow_inner">
-                <a href="#" class="closeit"><i class="icon-remove icon-2x"></i></a>
-            </div>
-        </div>
-    </div>-->
     <div id="sidr">
         <h2>Pages</h2>
         <ul>
             <li><a href="#">Home</a>
                 <ul>
-                    <li><a href="home1.html">Homepage 1</a></li>
-                    <li><a href="home2.html">Homepage 2</a></li>
-                    <li><a href="home3.html">Homepage 3</a></li>
-                    <li><a href="home4.html">Homepage 4</a></li>
-                    <li><a href="home5.html">Homepage 5</a></li>
-                    <li><a href="home6.html">Homepage 6</a></li>
-                    <li><a href="home7.html">Homepage 7</a></li>
+                    <li><a href="/menu/me">About Me</a></li>
+                    <li><a href="/menu/diary">My Diary</a></li>
+                    <li><a href="/menu/veganizm">Veganizm</a></li>
+                    <li><a href="/menu/contact">Contact</a></li>
                 </ul>
             </li>
             <li><a href="#">Single</a>
                 <ul>
-                    <li><a href="#">2 Columns Sidebar</a>
-                        <ul>
-                            <li><a href="single.html">Right Sidebar</a></li>
-                            <li><a href="single-left-sidebar.html">Left Sidebar</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="page.html">3 Columns</a>
-                        <ul>
-                            <li><a href="single-threecol.html">3 Columns right Sidebar</a></li>
-                            <li><a href="single-threecol-left.html">3 Columns left Sidebar</a></li>
-                            <li><a href="single-threecol-center.html">3 Columns Center Content</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="single-full.html">Full Width</a></li>
+                    <li  data-ng-repeat="item in hotCat track by item.id"><a data-ng-href="/posts/{{item.title}}">{{item.title}}</a></li>
                 </ul>
             </li>
-            <li><a href="page.html">Page</a>
-                <ul>
-                    <li><a href="page.html">2 Columns Sidebar</a>
-                        <ul>
-                            <li><a href="page.html">Right Sidebar</a></li>
-                            <li><a href="page-left-sidebar.html">Left Sidebar</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="page-fullwidth.html">Full Width</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Blog</a>
-                <ul>
-                    <li><a href="blog.html">Classic</a></li>
-                    <li><a href="blog-masonry.html">Masonry</a></li>
-                    <li><a href="blog-grid.html">Grid</a></li>
-                </ul>
-            </li>
-            <li><a href="elements.html">Elements</a></li>
-        </ul>
-
-        <h2>Categories</h2>
-        <ul>
-            <li><a href="archives-loop.html">Design</a></li>
-            <li><a href="archives-loop.html">Sport</a></li>
-            <li><a href="archives-loop.html">Politics</a></li>
-            <li><a href="archives-loop.html">Economy</a></li>
-            <li><a href="archives-loop.html">Technology</a></li>
-            <li><a href="archives-loop.html">Automotive</a></li>
         </ul>
     </div>
-
     <div class="clearfix"></div>
 </div>
 <div class="clearfix"></div>
@@ -192,60 +130,17 @@ oooooooooooooooooooooooooooooooooooooooooooooooo-->
                         <ul class="mainmenu">
                             <li><a href="#" class="icon-home active"></a>
                                 <ul>
-                                    <li><a href="#">About Me</a></li>
-                                    <li><a href="#">My Diary</a></li>
-                                    <li><a href="#">Veganizm</a></li>
-                                    <li><a href="#">Contact</a></li>
-
+                                    <li><a href="/menu/me">About Me</a></li>
+                                    <li><a href="/menu/diary">My Diary</a></li>
+                                    <li><a href="/menu/veganizm">Veganizm</a></li>
+                                    <li><a href="/menu/contact">Contact</a></li>
                                 </ul>
                             </li>
                             <li><a href="#" class=""><i class="icon-list-ul"></i></a>
                                 <ul>
-                                    <li><a href="archives-loop.html">Design</a></li>
-                                    <li><a href="archives-loop.html">Sport</a></li>
-                                    <li><a href="archives-loop.html">Politics</a></li>
-                                    <li><a href="archives-loop.html">Economy</a></li>
-                                    <li><a href="archives-loop.html">Technology</a></li>
-                                    <li><a href="archives-loop.html">Automotive</a></li>
+                                    <li  data-ng-repeat="item in hotCat track by item.id"><a data-ng-href="/posts/{{item.title}}">{{item.title}}</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Single</a>
-                                <ul>
-                                    <li><a href="#">2 Columns Sidebar</a>
-                                        <ul>
-                                            <li><a href="single.html">Right Sidebar</a></li>
-                                            <li><a href="single-left-sidebar.html">Left Sidebar</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="page.html">3 Columns</a>
-                                        <ul>
-                                            <li><a href="single-threecol.html">3 Columns right Sidebar</a></li>
-                                            <li><a href="single-threecol-left.html">3 Columns left Sidebar</a></li>
-                                            <li><a href="single-threecol-center.html">3 Columns Center Content</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="single-full.html">Full Width</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="page.html">Page</a>
-                                <ul>
-                                    <li><a href="page.html">2 Columns Sidebar</a>
-                                        <ul>
-                                            <li><a href="page.html">Right Sidebar</a></li>
-                                            <li><a href="page-left-sidebar.html">Left Sidebar</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="page-fullwidth.html">Full Width</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Blog</a>
-                                <ul>
-                                    <li><a href="blog.html">Classic</a></li>
-                                    <li><a href="blog-masonry.html">Masonry</a></li>
-                                    <li><a href="blog-grid.html">Grid</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="elements.html">Elements</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -255,11 +150,7 @@ oooooooooooooooooooooooooooooooooooooooooooooooo-->
     </header>
     <div class="clearfix"></div>
 
-
     <div class="clearfix"></div>
-
-
-
 
     <!-- oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
         Content/Teaser
@@ -269,8 +160,8 @@ oooooooooooooooooooooooooooooooooooooooooooooooo-->
         <div class="container_12">
             <div class="grid_6">
                 <ul class="breadcrumbs inline-list">
-                    <li><a href="#">Home</a></li>
-                    <li>Lastest Post</li>
+<!--                    <li><a href="#">Home</a></li>-->
+<!--                    <li>Lastest Post</li>-->
                 </ul>
             </div>
             <div class="grid_6 text-right">
@@ -321,11 +212,8 @@ oooooooooooooooooooooooooooooooooooooooooooooooo-->
             <div class="clearfix"></div>
             <!-- END sidebar -->
         </div>
-
-
         <div class="clearfix"></div>
     </section>
-
     <div class="clearfix"></div>
     <!-- oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
         Footer
@@ -380,13 +268,7 @@ oooooooooooooooooooooooooooooooooooooooooooooooo-->
                 <!-- Video Of The Week -->
                 <div class="foowid">
                     <h3 class="fword fwidtit">VIDEO OF THE WEEK</h3>
-<!--                    <div class="videothumb posthumb">-->
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/_moMI9nzbMU" frameborder="0" allowfullscreen></iframe>
-                        <!--<img src="http://placehold.it/400x267" alt="ERW - Airless Bicycle Tires"/>
-                        <a href="http://www.youtube.com/watch?v=v9SWIsY8rzQ" class="vidplay" title="ERW - Airless Bicycle Tires" rel="prettyPhoto">
-                            <i class="icon-play-circle icon-3x"></i>
-                        </a>-->
-<!--                    </div>-->
                     <div class="clearfix"></div>
                 </div>
 
@@ -479,23 +361,6 @@ oooooooooooooooooooooooooooooooooooooooooooooooo-->
         <!-- ooooooooooooooo
         COPYRIGHT
         ooooooooooooooooooo-->
-        <!--<div class="copyright container container_12">
-            <div class="grid_6">
-                Copyright &copy; 2013 Britanews.lol. All rights reserved
-            </div>
-            <div class="grid_6">
-                <ul class="text-right inline-list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">F.A.Q</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms &amp; Conditions</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Advertise</a></li>
-                </ul>
-            </div>
-            <div class="clearfix"></div>
-        </div>-->
-
 
         <div class="clearfix"></div>
     </footer>
@@ -508,9 +373,6 @@ oooooooooooooooooooooooooooooooooooooooooooooooo-->
 <script type="text/javascript" src="/js/plugin.js"></script>
 <script type="text/javascript" src="/js/custom.js"></script>
 <script type="text/javascript" src="/js/vendor/plusone.js"></script>
-<!--<script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>-->
-<!--<script type="text/javascript" src="/js/vendor/xml2json.js"></script>-->
-
 
 <script src="/js/vendor/angular.min.js"></script>
 <script src="/js/vendor/angular-resource.min.js"></script>

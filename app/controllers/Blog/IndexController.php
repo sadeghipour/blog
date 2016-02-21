@@ -8,19 +8,9 @@ use App\Utility\ReturnVO;
 use Phalcon\Http\Request;
 use Phalcon\Http\Response;
 
-class IndexController extends ControllerBase
-{
+class IndexController extends ControllerBase{
 
-    //if finish comment initialize func
-//    function initialize(){
-//        $isUndderConstruction = true;
-//        if($isUndderConstruction){
-//            $this->response->redirect("404");
-//        }
-//    }
-
-    public function indexAction()
-    {
+    public function indexAction(){
         $url = urldecode(str_replace("/","",$this->request->getURI()));
         $posts = Posts::findFirst(array("title=?0","bind"=>array($url)));
         if($posts){
@@ -39,7 +29,6 @@ class IndexController extends ControllerBase
 
     public function categoryAction(){
 
-       // $this->view->setLayout("category");
     }
 
     public function menuAction(){
