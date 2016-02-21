@@ -8,6 +8,7 @@ class ControllerBase extends Controller
 {
 
     function initialize(){
+
         $this->view->setViewsDir($this->view->getViewsDir()."Blog/");
         $clientAddress = $this->request->getClientAddress();
         $logic = new Logic();

@@ -22,15 +22,13 @@ class IndexController extends ControllerBase
     public function indexAction()
     {
         $url = urldecode(str_replace("/","",$this->request->getURI()));
-        $this->view->setVars(array('featured' =>  Posts::find(array("is_featured=1"))->toArray()));
         $posts = Posts::findFirst(array("title=?0","bind"=>array($url)));
         if($posts){
             $this->response->redirect(CONSTS::POSTS.$url);
         }
     }
 
-    public function postsAction($param){
-
+    public function postsAction(){
 
     }
 
@@ -39,9 +37,13 @@ class IndexController extends ControllerBase
 
     }
 
-    public function categoryAction($param){
+    public function categoryAction(){
 
        // $this->view->setLayout("category");
+    }
+
+    public function menuAction(){
+
     }
 
 }

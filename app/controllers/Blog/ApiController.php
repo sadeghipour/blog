@@ -106,4 +106,21 @@ class ApiController extends ControllerBase{
         $vo->success = $fPosts;
         return $res->setJsonContent($vo);
     }
+
+    function getMenuContentAction(){
+        $req = new Request();
+        $res = new Response();
+        $vo = new ReturnVO();
+        if($req->isPost()){
+            $menu = $req->getPost("menu");
+            $post = Posts::findFirst(array("title=?0","bind"=>array($menu)));
+            if($post){
+                $vo->success = $post;
+            }
+            else{
+                $vo->fail = MESSAGES::EMPTY_ARRAY;
+            }
+            return $res->setJsonContent($vo);
+        }
+    }
 }

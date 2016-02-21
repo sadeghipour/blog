@@ -102,7 +102,28 @@ angular.module(APP_NAME).service('WebService', ["$http", function ($http) {
         }).error(function (data) {
             callbackFunc([]);
         })
-    }
+    };
+
+    this.getMenuContent = function(parameters,callbackFunc) {
+        $http.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded; charset=UTF-8";
+        $http.defaults.transformRequest = function (data) {
+            if (data) {
+                return $.param(data);
+            }
+            return null;
+        };
+
+        $http({
+            url: "/api/getMenuContent",
+            method: "POST",
+            data: {menu:decodeURIComponent(parameters)},
+            header: {'Content-Type': 'application/x-www-form-urlencoded'}
+        }).success(function (data) {
+            callbackFunc(data);
+        }).error(function (data) {
+            callbackFunc([]);
+        })
+    };
 
 
 
