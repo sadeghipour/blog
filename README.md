@@ -1,1 +1,1 @@
-tayfunsezer has been included to project
+This is a Phalcon base CMS and in front-end and also I use AngularJS and for Webservice SailsJS.
