@@ -1,6 +1,6 @@
 var APP_NAME = 'app';
 
-angular.module(APP_NAME).service('WebService', ["$http", function ($http) {
+angular.module(APP_NAME).service('WebService', ["$http","$location", function ($http,$location) {
 
     this.getWarning = function(parameters,callbackFunc){
         $http({
@@ -26,6 +26,9 @@ angular.module(APP_NAME).service('WebService', ["$http", function ($http) {
         }).error(function(data){
             callbackFunc([]);
         })
+
+        //$location.url('/inbox/filters=[{id:"1"}]');
+
     };
 
     this.getHotCat = function(callbackFunc){

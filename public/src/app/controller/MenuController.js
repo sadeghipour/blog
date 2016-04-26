@@ -1,4 +1,4 @@
-MenuController = ['$scope', '$http', '$location','AppData','WebService','$window', function ($scope, $http, $location,AppData,WebService,$window) {
+app.controller("MenuController",function ($scope, $http, $location,AppData,WebService,$window) {
 
     //TODO: at this I must migrate to Angular2 but........................... WE WILL CONTINUE ON ANGULARJS ON THIS BLOG!
 
@@ -11,4 +11,4 @@ MenuController = ['$scope', '$http', '$location','AppData','WebService','$window
             $window.location.href = "/error/show404";
         }
     });
-}];
+});

@@ -9,7 +9,7 @@ if (isProd === true) {
 } else {
 
     //EDIT APPLICATION FILE LIST//
-    var controllers = ["HomeController", "MainController","IndexController","LayoutController","CategoryLayoutController","MenuController"];
+    var controllers = ["IndexController","LayoutController","CategoryLayoutController","MenuController"];
     var services = ["WebService"];
     var filters = [];
     var directives = ["align-on-resize", "animate-fade", "animate-slide", "blur-error-class", "datepicker", "default-input-value", "dynamic-attribute", "focus-blur-events", "form-directives", "swipe-directives"];

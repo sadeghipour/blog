@@ -1,4 +1,4 @@
-CategoryLayoutController = ['$scope', '$http', '$location','AppData','WebService', function ($scope, $http, $location,AppData,WebService) {
+app.controller("CategoryLayoutController", function ($scope, $http, $location,AppData,WebService) {
     WebService.getHotCat(function(result){
         if(result){
             console.log(result);
@@ -6,4 +6,4 @@ CategoryLayoutController = ['$scope', '$http', '$location','AppData','WebService
         }
     })
 
-}];
+});

@@ -102,7 +102,7 @@ class ApiController extends ControllerBase{
         $req = new Request();
         $res = new Response();
         $vo = new ReturnVO();
-        $fPosts = Posts::find(array("limit"=>"5","order by"=>"create_date desc"))->toArray();
+        $fPosts = Posts::find(array("limit"=>"5","order by"=>"create_date desc","is_active=1"))->toArray();
         $vo->success = $fPosts;
         return $res->setJsonContent($vo);
     }
