@@ -1,1 +1,1 @@
-This is a Phalcon base CMS and in front-end and also I use AngularJS and for Webservice SailsJS.
+This is a Phalcon base CMS, In front-end I used AngularJS and for Web services SailsJS.
